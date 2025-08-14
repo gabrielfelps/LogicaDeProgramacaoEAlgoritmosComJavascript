@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resp1_c</title>
+</head>
+
+<body>
+  <script>
+    //Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamentos da loja. Calcule e informe o valor para pagamentos á vista com 10% de desconto e o valor em 3x;
+
+    // Exemplo:
+    // Preço: R$ 60.00
+    // Á Vista: R$ 54.00
+    // Ou 3x de: R$ 20.00
+
+    const precoProduto = Number(prompt("Digite o preço do produto:"));
+    const aVista = (precoProduto - (precoProduto * 0.10));
+    const aPrazo = (precoProduto / 3);
+
+    alert(`Preço: R$ ${precoProduto.toFixed(2)}\nÁ Vista: R$ ${aVista.toFixed(2)}\nOu 3x de: R$ ${aPrazo.toFixed(2)}`)
+  </script>
+</body>
+
+</html>
