@@ -5,11 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercício 2.b</title>
+  <style>
+    input {
+      display: block;
+    }
+
+    input:last-child {
+      margin-top: 15px;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Elaborar um programa para lan house de um aeroporto:
      O programa deve ler o valor de cada 15 minutos de uso de um computador e o tempo de uso por um cliente em um minuto. Informe o valor a ser pago pelo cliente, sabendo que as fra;'oes extras de 15 minutos devem ser cobradas de forma integral.' -->
+
+  <h1>Lan House JS</h1>
+
+  <form action="">
+    <label for="valorUso">Valor por 15min de uso R$:</label>
+    <input type="text" id="valorUso" name="valorPor15min" required>
+
+    <label for="tempoUso">Tempo de Uso do Cliente:</label>
+    <input type="text" id="tempoUso" name="tempoUso">
+
+    <input type="submit" value="Calcular Valor a Pagar">
+  </form>
+
+  <h3></h3>
+
   <script src="./scripts/resp2_b.js"></script>
 </body>
 
