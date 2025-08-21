@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 4.a</title>
+  <style>
+    img {
+      float: left;
+      margin-right: 10px;
+      height: 300px;
+      width: 300px;
+    }
+
+    h1 {
+      border-bottom-style: inset;
+    }
+
+    input {
+      display: block;
+    }
+
+    input:last-child {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elaborar um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor. Se a velocidade for inferior ou igual à permitida, exiba "Sem Multa". Se a velocidade for de até 20% maior que a permitida, exiba "Multa Leve". E se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave". -->
+
+  <img src="images/speedCheck.png"
+    alt="Dean e Sam Winchester sendo parados por estarem em alta velocidade por um policial fantasma.">
+  <h1>Programa Verifica Velocidade</h1>
+
+  <form action="">
+    <label for="inVelocidadePermitida">Velocidade Permitida: </label>
+    <input type="number" name="velocidadePermitida" id="inVelocidadePermitida" required>
+
+    <label for="inVelocidadeCondutor">Velocidade do Condutor: </label>
+    <input type="number" name="velocidadeCondutor" id="inVelocidadeCondutor" required>
+
+    <input type="submit" value="Verificar Velocidade">
+  </form>
+
+  <h3></h3>
+
+  <script src="./scripts/ex4_2.js"></script>
+</body>
+
+</html>
