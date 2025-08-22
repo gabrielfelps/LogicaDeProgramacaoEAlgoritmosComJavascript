@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      float: left;
+      margin-right: 10px;
+      height: 300px;
+      width: 300px;
+    }
+
+    h1 {
+      border-bottom-style: inset;
+    }
+
+    input {
+      display: block;
+    }
+
+    input:last-child {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elaborar um programa que leia o nome de uma fruta e um número. O programa deve repetir a exibição do nome da fruta, de acordo com o número informado. Utilize o "*" para separar os nomes. -->
+
+  <img src="./images/steveJobsEatingAnApple.png" alt="">
+  <h1>Programa Repete Fruta</h1>
+
+  <form>
+    <label for="inNomeFruta">Fruta</label>
+    <input type="text" id="inNomeFruta" name="nomeFruta">
+
+    <label for="inVezesRepeticao">Número</label>
+    <input type="number" id="inVezesRepeticao" name="vezesRepetidas">
+
+    <input type="submit" value="Repetir Fruta">
+  </form>
+
+  <h3 id="resultado"></h3>
+
+  <script src="scripts/resp5_a.js"></script>
+</body>
+
+</html>
