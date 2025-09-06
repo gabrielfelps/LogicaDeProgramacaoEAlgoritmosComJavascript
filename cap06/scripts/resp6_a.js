@@ -19,6 +19,7 @@ function adicionarEMostrar(e) {
   clubes.push(clubeNome);
   mostrarTimes();
   form.reset();
+  form.inClube.focus();
 }
 
 function mostrarTimes() {
@@ -27,8 +28,7 @@ function mostrarTimes() {
     return;
   }
 
-  paragraph.innerText = "";
-  resp.innerText = "";
+  limparSaida();
 
   for (const clube of clubes) {
     resp.innerText += `${clube} \n`;
@@ -42,8 +42,7 @@ function montarTabelas() {
     return;
   }
 
-  paragraph.innerText = "";
-  resp.innerText = "";
+  limparSaida();
   const clubesTabelas = clubes.slice();
 
   for (let i = 0; i < clubes.length / 2; i++) {
@@ -64,6 +63,11 @@ function verificarNome(clubeNome) {
   }
 
   return clubeNome;
+}
+
+function limparSaida() {
+  paragraph.innerText = "";
+  resp.innerText = "";
 }
 
 form.addEventListener("submit", adicionarEMostrar);
