@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos Elimininatórios</title>
+  <style>
+    img {
+      float: left;
+      margin-right: 10px;
+      height: 300px;
+      width: 300px;
+    }
+
+    h1 {
+      border-bottom-style: inset;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Elaborar um programa para gearar uma tabela com os jogos de uma fase eliminatória de um campeonato. O programa deve conter três funções (a serem executadas no evento de "click" de cada botão)
+
+    1: Validar o preenchimento, adicionar um clube ao vetor e listar os clubes;
+    2: Listar os clubes (se houver);
+    3: Montar a tabela de jogos, no formato "primeiro x último", segundo x penúltimos e assim por diante.
+     
+    Exibir mensagem e não listar a tabela de jogos, caso o número de clubes informados seja impar.-->
+  <img src="images/times_resp6_a.png" alt="Dois times se enfrentando em um jogo de futebol.">
+  <h1>Jogos Elimininatórios</h1>
+
+  <form>
+    <div class="flex">
+      <label for="inClube">Clube: </label>
+      <input type="text" id="inClube" name="clube" required>
+      <input type="submit" value="Adicionar">
+    </div>
+  </form>
+  <button class="listar-clubes">Listas Clubes</button>
+  <button class="montar-tabelas">Montar Tabelas</button>
+  <p></p>
+  <pre></pre>
+
+  <script src="scripts/resp6_a.js"></script>
+</body>
+
+</html>
