@@ -29,9 +29,7 @@ function mostraNaTela() {
 
   limparSaida();
 
-  for (const numero of numeros) {
-    exibirResultado.innerText += `${numero} \n`;
-  }
+  exibirResultado.innerText = numeros.join(", ");
 }
 
 function adicionarNumero(e) {
@@ -53,7 +51,7 @@ function adicionarNumero(e) {
 }
 
 function verificarOrdemNumerica() {
-  limparSaida();
+  exibirAviso.innerText = "";
 
   if (numeros.length < 2) {
     exibirAviso.innerText =
