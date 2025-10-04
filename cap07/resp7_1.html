@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      float: left;
+      margin-right: 10px;
+      height: 300px;
+      width: 300px;
+    }
+
+    h1 {
+      border-bottom-style: inset;
+    }
+
+    button {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/resp7_1.png" alt="Neo decriptografando uma mensagem em um computador">
+  <h1>Programa Criptografia</h1>
+
+  <form name="criptografia" action="">
+    <label for="inMessage">Messagem:</label>
+    <input type="text" id="inMessage" name="message" required>
+    <div class="btns">
+      <button id="btnCriptografar">Criptografar</button>
+      <button id="btnDecriptografar" disabled>Decriptografar</button>
+    </div>
+  </form>
+  <h3 id="mensagem"></h3>
+  <script src="scripts/resp7_1.js" defer></script>
+</body>
+
+</html>
